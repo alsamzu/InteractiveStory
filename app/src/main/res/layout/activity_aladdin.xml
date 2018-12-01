@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aladdin">
+
+    <TextView
+        android:id="@+id/aladdinStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/aladinStory"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        app:layout_constraintTop_toBottomOf="@+id/aladdinImage"
+        android:layout_margin="10dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/aladdinImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       android:src="@drawable/aladdin"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <Button
+        android:id="@+id/aladdinMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:text="Back To Main Page"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintTop_toBottomOf="@id/aladdinStory"
+        />
+
+    <Button
+        android:id="@+id/aladdinNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:background="@color/colorPrimaryLight"
+        android:text="Next Story"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/aladdinMainMenu"
+        app:layout_constraintTop_toBottomOf="@+id/aladdinStory" />
+</android.support.constraint.ConstraintLayout>
