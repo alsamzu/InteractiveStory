@@ -21,7 +21,8 @@
         </activity>
         <activity android:name=".TwoDogs" />
         <activity android:name=".Youngking" />
-        <activity android:name=".Hunchback"></activity>
+        <activity android:name=".Hunchback" />
+        <activity android:name=".EnchantedHorse"></activity>
     </application>
 
 </manifest>

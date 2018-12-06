@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton twodogs;
     private ImageButton king;
     private ImageButton hunch;
+    private ImageButton horse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +55,13 @@ public class MainActivity extends AppCompatActivity {
             openHunch();
         }
     });
+    horse = findViewById(R.id.horse);
+    horse.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            openHorse();
+        }
+    });
 
     }
 
@@ -77,6 +85,10 @@ public class MainActivity extends AppCompatActivity {
     public void openHunch(){
         Intent hunchIntent = new Intent(this,Hunchback.class);
         startActivity(hunchIntent);
+    }
+    public void openHorse(){
+        Intent horseIntent = new Intent(this,EnchantedHorse.class);
+        startActivity(horseIntent);
     }
 
 }
