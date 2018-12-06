@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
    private ImageButton aladin;
     private ImageButton merchant;
     private ImageButton twodogs;
+    private ImageButton king;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +39,13 @@ public class MainActivity extends AppCompatActivity {
                 openDogs();
             }
         });
-
+    king = findViewById(R.id.youngking);
+    king.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            openKing();
+        }
+    });
 
     }
 
@@ -54,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
     public void openDogs(){
         Intent dogIntent = new Intent(this, TwoDogs.class);
         startActivity(dogIntent);
+    }
+    public void openKing(){
+        Intent kingIntent = new Intent(this,Youngking.class);
+        startActivity(kingIntent);
     }
 
 }

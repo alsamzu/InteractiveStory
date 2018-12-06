@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Youngking">
+
+    <ImageView
+        android:id="@+id/youngkingimage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/youngking"
+        />
+    <TextView
+        android:id="@+id/kingStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/kingStory"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        app:layout_constraintTop_toBottomOf="@+id/youngkingimage"
+        android:layout_margin="10dp"
+
+        />
+    <Button
+        android:id="@+id/kingMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:text="Back To Main Page"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintTop_toBottomOf="@id/kingStory"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/kingNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:background="@color/colorPrimaryLight"
+        android:text="Next Story"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintLeft_toRightOf="@+id/kingMain"
+        app:layout_constraintTop_toBottomOf="@+id/kingStory"
+        android:layout_marginTop="5dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
