@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TwoDogs" />
-        <activity android:name=".Youngking"></activity>
+        <activity android:name=".Youngking" />
+        <activity android:name=".Hunchback"></activity>
     </application>
 
 </manifest>

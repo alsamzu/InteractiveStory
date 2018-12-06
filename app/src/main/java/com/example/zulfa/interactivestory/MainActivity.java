@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton merchant;
     private ImageButton twodogs;
     private ImageButton king;
+    private ImageButton hunch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
             openKing();
         }
     });
+    hunch = findViewById(R.id.hunchback);
+    hunch.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            openHunch();
+        }
+    });
 
     }
 
@@ -65,6 +73,10 @@ public class MainActivity extends AppCompatActivity {
     public void openKing(){
         Intent kingIntent = new Intent(this,Youngking.class);
         startActivity(kingIntent);
+    }
+    public void openHunch(){
+        Intent hunchIntent = new Intent(this,Hunchback.class);
+        startActivity(hunchIntent);
     }
 
 }
