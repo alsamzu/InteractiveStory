@@ -25,6 +25,7 @@
         android:textSize="24sp"
         android:layout_alignParentLeft="true"
         app:layout_constraintTop_toBottomOf="@+id/merchantimage"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_margin="10dp"
 
         />

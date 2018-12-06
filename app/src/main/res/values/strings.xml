@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">InteractiveStory</string>
     <string name="merchant_and_the_genie">Merchant and the Genie</string>
-    <string name="aladinStory">Once upon a time, there was a poor boy named Aladdin
-        who lived with his mother. One day, a rich stranger came to their house looking for
-        Aladdin. ‘I am a merchant,’ he told Aladdin’s mother.
-        ‘I have come all the way from Arabia. I want to take your boy with me for a little work,
+    <string name="aladinStory">Once upon a time, there was a poor boy named Aladdin who lived with his mother.
+        One day, a rich stranger came to their house looking for Aladdin.
+        ‘I am a merchant,’ he told Aladdin’s mother.
+        ‘I have come all the way from Arabia.
+        I want to take your boy with me for a little work,
         but I will pay him so much that you will not be poor anymore.’</string>
     <string name="merchantStory">
         Sire, there was once upon a time a merchant who possessed great wealth, in land and merchandise, as well as in ready money. He was obliged from time to time to take journeys to arrange his affairs. One day, having to go a long way from home,
