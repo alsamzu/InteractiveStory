@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EnchantedHorse">
@@ -33,25 +37,42 @@
         android:layout_margin="10dp"
 
         />
-    <Button
-        android:id="@+id/horseMain"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/conthorse"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryLight"
-        android:text="Back To Main Page"
-        android:textColor="@color/colorPrimaryText"
-        app:layout_constraintTop_toBottomOf="@id/horseStory"
-        android:layout_marginTop="10dp"/>
-    <Button
-        android:id="@+id/horseNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="168dp"
-        android:background="@color/colorPrimaryLight"
-        android:text="Next Story"
-        android:textColor="@color/colorPrimaryText"
-        app:layout_constraintLeft_toRightOf="@+id/horseMain"
+        android:text="@string/continue_reading"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horseStory"
-        android:layout_marginTop="10dp"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        />
+
+    <ImageButton
+        android:id="@+id/horsemerchant"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/merchant"
+        android:layout_marginLeft="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conthorse"/>
+
+    <ImageButton
+        android:id="@+id/horsealadin"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/aladdin"
+        android:layout_marginLeft="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toRightOf="@id/horsemerchant"
+        app:layout_constraintTop_toBottomOf="@id/conthorse"/>
 
 </android.support.constraint.ConstraintLayout>
+</ScrollView>

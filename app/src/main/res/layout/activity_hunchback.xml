@@ -1,55 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Hunchback">
-
-    <ImageView
-        android:id="@+id/hunchbackimage"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:adjustViewBounds="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/hunchback"
-        />
-    <TextView
-        android:id="@+id/hunchbackStory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:text="@string/hunchStory"
-        android:textColor="@color/colorPrimaryText"
-        android:textSize="24sp"
-        android:layout_alignParentLeft="true"
-        app:layout_constraintTop_toBottomOf="@+id/hunchbackimage"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        tools:context=".Hunchback">
 
-        />
-    <Button
-        android:id="@+id/hunchMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryLight"
-        android:text="Back To Main Page"
-        android:textColor="@color/colorPrimaryText"
-        app:layout_constraintTop_toBottomOf="@id/hunchbackStory"
-        android:layout_marginTop="10dp"/>
-    <Button
-        android:id="@+id/hunchNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="168dp"
-        android:background="@color/colorPrimaryLight"
-        android:text="Next Story"
-        android:textColor="@color/colorPrimaryText"
-        app:layout_constraintLeft_toRightOf="@+id/hunchMain"
-        app:layout_constraintTop_toBottomOf="@+id/hunchbackStory"
-        android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/hunchbackimage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/hunchback"
+            />
+        <TextView
+            android:id="@+id/hunchbackStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/hunchStory"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true"
+            app:layout_constraintTop_toBottomOf="@+id/hunchbackimage"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="10dp"
 
-</android.support.constraint.ConstraintLayout>
+            />
+        <TextView
+            android:id="@+id/conthunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_reading"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hunchbackStory"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            />
+
+        <ImageButton
+            android:id="@+id/hunchorse"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/horse"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/conthunch"/>
+
+        <ImageButton
+            android:id="@+id/hunchmerchant"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/merchant"
+            android:layout_marginLeft="30dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toRightOf="@id/hunchorse"
+            app:layout_constraintTop_toBottomOf="@id/conthunch"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

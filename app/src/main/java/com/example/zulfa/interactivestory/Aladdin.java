@@ -5,24 +5,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Aladdin extends AppCompatActivity {
-    private Button aladinext;
-    private Button aladinmain;
+    private ImageButton aladindogs;
+    private ImageButton aladinking;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aladdin);
-        aladinext=findViewById(R.id.aladdinNext);
-        aladinext.setOnClickListener(new View.OnClickListener() {
+        aladindogs=findViewById(R.id.aladindogs);
+        aladindogs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 aladinextStory();
             }
         });
-        aladinmain=findViewById(R.id.aladdinMainMenu);
-        aladinmain.setOnClickListener(new View.OnClickListener() {
+        aladinking =findViewById(R.id.aladinking);
+        aladinking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 aladinbackmain();
@@ -31,11 +32,11 @@ public class Aladdin extends AppCompatActivity {
     }
 
     public void aladinextStory(){
-        Intent aladinIntent = new Intent(this,Merchant.class);
+        Intent aladinIntent = new Intent(this,TwoDogs.class);
         startActivity(aladinIntent);
     }
     public void aladinbackmain(){
-        Intent aladinmain = new Intent(this,MainActivity.class);
+        Intent aladinmain = new Intent(this,Youngking.class);
         startActivity(aladinmain);
     }
 }

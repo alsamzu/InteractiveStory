@@ -4,37 +4,37 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Merchant extends AppCompatActivity {
-    private Button merchantmain;
-    private Button merchantnext;
+    private ImageButton merchantaladin;
+    private ImageButton merchantdogs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_merchant);
 
-        merchantmain = findViewById(R.id.merchantMain);
-        merchantmain.setOnClickListener(new View.OnClickListener() {
+        merchantaladin = findViewById(R.id.merchantaladin);
+        merchantaladin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                merchantbackmain();
+                merchantgoaladin();
             }
         });
-        merchantmain = findViewById(R.id.merchantNext);
-        merchantmain.setOnClickListener(new View.OnClickListener() {
+        merchantdogs = findViewById(R.id.merchantdogs);
+        merchantdogs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                merchantnextstory();
+                merchantgodogs();
             }
         });
     }
-    public void merchantbackmain(){
-        Intent merchantmain = new Intent(this, MainActivity.class);
+    public void merchantgoaladin(){
+        Intent merchantmain = new Intent(this, Aladdin.class);
         startActivity(merchantmain);
     }
-    public void merchantnextstory(){
-        Intent merchantnext = new Intent(this,Aladdin.class);
+    public void merchantgodogs(){
+        Intent merchantnext = new Intent(this,TwoDogs.class);
         startActivity(merchantnext);
     }
 }

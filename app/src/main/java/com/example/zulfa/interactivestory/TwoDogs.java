@@ -5,24 +5,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class TwoDogs extends AppCompatActivity {
-            private Button dogsnext;
-            private Button dogsmain;
+            private ImageButton dogsking;
+            private ImageButton dogshunch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two_dogs);
-        dogsnext = findViewById(R.id.dogNext);
-        dogsnext.setOnClickListener(new View.OnClickListener() {
+        dogsking = findViewById(R.id.dogsking);
+        dogsking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dogsNextStory();
             }
         });
 
-        dogsmain = findViewById(R.id.dogMainMenu);
-        dogsmain.setOnClickListener(new View.OnClickListener() {
+        dogshunch = findViewById(R.id.doghunch);
+        dogshunch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dogsmainMenu();
@@ -31,12 +32,12 @@ public class TwoDogs extends AppCompatActivity {
     }
 
     public void dogsNextStory(){
-        Intent dogsintent = new Intent(this,Aladdin.class);
+        Intent dogsintent = new Intent(this,Youngking.class);
         startActivity(dogsintent);
     }
 
     public void dogsmainMenu(){
-        Intent dogmain = new Intent(this,MainActivity.class);
+        Intent dogmain = new Intent(this,Hunchback.class);
         startActivity(dogmain);
     }
 }
