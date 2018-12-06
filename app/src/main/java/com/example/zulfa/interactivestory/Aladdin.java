@@ -21,8 +21,8 @@ public class Aladdin extends AppCompatActivity {
                 aladinextStory();
             }
         });
-        aladinext=findViewById(R.id.aladdinMainMenu);
-        aladinext.setOnClickListener(new View.OnClickListener() {
+        aladinmain=findViewById(R.id.aladdinMainMenu);
+        aladinmain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 aladinbackmain();

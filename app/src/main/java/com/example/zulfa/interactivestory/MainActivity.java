@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
    private ImageButton aladin;
     private ImageButton merchant;
+    private ImageButton twodogs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +31,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        twodogs = findViewById(R.id.twodogs);
+        twodogs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDogs();
+            }
+        });
 
 
     }
@@ -43,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
     public void openMerchant(){
         Intent merchantIntent = new Intent(this,Merchant.class);
         startActivity(merchantIntent);
+    }
+    public void openDogs(){
+        Intent dogIntent = new Intent(this, TwoDogs.class);
+        startActivity(dogIntent);
     }
 
 }
