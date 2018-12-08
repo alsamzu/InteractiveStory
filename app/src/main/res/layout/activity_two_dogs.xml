@@ -58,6 +58,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/contdogs"/>
 
@@ -70,6 +71,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintLeft_toRightOf="@id/dogsking"
             app:layout_constraintTop_toBottomOf="@id/contdogs"/>
 
