@@ -19,7 +19,7 @@
             android:layout_alignParentTop="true"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            android:src="@drawable/youngking"
+            android:src="@drawable/young2"
             />
         <TextView
             android:id="@+id/kingStory"
@@ -52,7 +52,7 @@
             android:id="@+id/kinghunch"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/hunchback"
+            android:src="@drawable/hunch"
             android:layout_marginLeft="16dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"

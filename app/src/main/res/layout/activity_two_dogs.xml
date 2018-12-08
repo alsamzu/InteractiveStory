@@ -53,7 +53,7 @@
             android:id="@+id/dogsking"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/youngking"
+            android:src="@drawable/young2"
             android:layout_marginLeft="16dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
