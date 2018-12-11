@@ -10,13 +10,26 @@
     android:layout_height="match_parent"
     tools:context=".EnchantedHorse">
 
+    <TextView
+        android:id="@+id/horseMainTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Enchanted Horse"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="40dp"/>
+
     <ImageView
         android:id="@+id/horseimage"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toBottomOf="@+id/horseMainTittle"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:src="@drawable/horse"
