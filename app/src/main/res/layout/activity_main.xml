@@ -10,101 +10,162 @@
 
         tools:context=".MainActivity">
 
-        <ImageView
-            android:id="@+id/frontArabian"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:src="@drawable/arabian"
-            android:scaleType="fitXY"
-            android:adjustViewBounds="true"
 
-            />
 
         <ImageButton
             android:id="@+id/merchantGenie"
-            android:layout_width="120dp"
-            android:layout_height="110dp"
+            android:layout_width="165dp"
+            android:layout_height="150dp"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
-            app:layout_constraintTop_toBottomOf="@id/frontArabian"
+            app:layout_constraintTop_toTopOf="parent"
             android:src="@drawable/merchant"
-            android:layout_marginTop="36dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             />
+        <TextView
+            android:id="@+id/mechantitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Merchant and \n the Genie"
+            app:layout_constraintTop_toBottomOf="@+id/merchantGenie"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="5dp"/>
 
         <ImageButton
             android:id="@+id/aladdin"
-            android:layout_width="120dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="36dp"
+            android:layout_width="165dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
             android:src="@drawable/aladdin"
             app:layout_constraintLeft_toRightOf="@+id/merchantGenie"
-            app:layout_constraintTop_toBottomOf="@id/frontArabian" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+          android:id="@+id/aladdintitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aladdin and the \n magic Lamp"
+            app:layout_constraintTop_toBottomOf="@+id/aladdin"
+            app:layout_constraintLeft_toRightOf="@+id/mechantitle"
+            android:layout_marginLeft="73dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="5dp"/>
 
         <ImageButton
             android:id="@+id/twodogs"
-            android:layout_width="120dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="16dp"
+            android:layout_width="165dp"
+            android:layout_height="150dp"
             android:layout_marginTop="36dp"
-            android:layout_marginRight="16dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/twodogs"
-            app:layout_constraintLeft_toRightOf="@+id/aladdin"
-            app:layout_constraintTop_toBottomOf="@id/frontArabian"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/merchantGenie"
+            android:layout_marginLeft="10dp"
+           />
+        <TextView
+            android:id="@+id/dogtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Old Man and \n the Two Black Dogs"
+            app:layout_constraintTop_toBottomOf="@+id/twodogs"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="5dp"/>
 
 
 
         <ImageButton
             android:id="@+id/hunchback"
-            android:layout_width="120dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="12dp"
+            android:layout_width="165dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="7dp"
             android:layout_marginTop="36dp"
-            android:layout_marginRight="14dp"
+            android:layout_marginRight="7dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/hunch"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/merchantGenie" />
+            app:layout_constraintLeft_toRightOf="@+id/twodogs"
+            app:layout_constraintTop_toBottomOf="@+id/aladdin"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <TextView
+            android:id="@+id/hunchbacktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Little \n Hunchback"
+            app:layout_constraintTop_toBottomOf="@+id/hunchback"
+            app:layout_constraintLeft_toRightOf="@+id/dogtitle"
+            android:layout_marginLeft="65dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="5dp"/>
         <ImageButton
             android:id="@+id/horse"
-            android:layout_width="120dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="14dp"
+            android:layout_width="165dp"
+            android:layout_height="150dp"
             android:layout_marginTop="36dp"
-            android:layout_marginRight="16dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/horse"
-            app:layout_constraintLeft_toRightOf="@id/hunchback"
-            app:layout_constraintTop_toBottomOf="@id/aladdin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/twodogs"
+            android:layout_marginLeft="10dp"
             />
+        <TextView
+            android:id="@+id/horsetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Enchanted Horse"
+            app:layout_constraintTop_toBottomOf="@+id/horse"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="5dp"/>
 
         <ImageButton
             android:id="@+id/youngking"
-            android:layout_width="120dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="16dp"
+            android:layout_width="165dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="7dp"
             android:layout_marginTop="36dp"
-            android:layout_marginRight="14dp"
+            android:layout_marginRight="7dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/young2"
             app:layout_constraintLeft_toRightOf="@id/horse"
-            app:layout_constraintTop_toBottomOf="@id/twodogs"
+            app:layout_constraintTop_toBottomOf="@id/hunchback"
             app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/kingtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Young King \n of Black Isles"
+            app:layout_constraintTop_toBottomOf="@+id/youngking"
+            app:layout_constraintLeft_toRightOf="@+id/horsetitle"
+            android:layout_marginLeft="73dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="5dp"/>
 
 
     </android.support.constraint.ConstraintLayout>

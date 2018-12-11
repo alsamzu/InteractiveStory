@@ -12,6 +12,12 @@
         tools:context=".Aladdin">
 
         <TextView
+            android:id="@+id/aladdinMainTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
             android:id="@+id/aladdinStory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
